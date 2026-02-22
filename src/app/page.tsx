@@ -27,11 +27,11 @@ export default function Home() {
             <h3 className="post-title">Building a Premium Markdown Blog</h3>
             <p className="post-excerpt">How to leverage Next.js and github pages to build an SEO optimized, premium developer portfolio.</p>
           </Link>
-          <a href="/blog/coming-soon" className="post-card">
+          <Link href="/blog/building-premium-markdown-blog" className="post-card">
             <div className="post-date">Sep 15, 2026</div>
             <h3 className="post-title">Understanding Vector Databases</h3>
             <p className="post-excerpt">A deep dive into why vector databases are revolutionizing the modern AI landscape.</p>
-          </a>
+          </Link>
         </div>
       </section>
     </div>
