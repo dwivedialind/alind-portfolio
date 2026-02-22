@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './home.css';
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         </p>
 
         <div className="hero-actions">
-          <a href="/blog" className="primary-btn">Read my Blog</a>
+          <Link href="/blog" className="primary-btn">Read my Blog</Link>
           <a href="https://github.com/dwivedialind" target="_blank" rel="noopener noreferrer" className="secondary-btn">GitHub</a>
         </div>
       </section>
@@ -21,11 +22,11 @@ export default function Home() {
         <h2 className="section-title">Recent Writing</h2>
         <div className="posts-grid">
           {/* Placeholder for now. We will map over actual posts later */}
-          <a href="/blog/building-premium-markdown-blog" className="post-card">
+          <Link href="/blog/building-premium-markdown-blog" className="post-card">
             <div className="post-date">Sep 28, 2026</div>
             <h3 className="post-title">Building a Premium Markdown Blog</h3>
             <p className="post-excerpt">How to leverage Next.js and github pages to build an SEO optimized, premium developer portfolio.</p>
-          </a>
+          </Link>
           <a href="/blog/coming-soon" className="post-card">
             <div className="post-date">Sep 15, 2026</div>
             <h3 className="post-title">Understanding Vector Databases</h3>

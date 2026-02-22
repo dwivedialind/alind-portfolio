@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { getSortedPostsData } from '../../lib/posts';
 import './blog.css';
 
@@ -13,7 +14,7 @@ export default function BlogIndex() {
 
             <div className="posts-list">
                 {allPostsData.map(({ id, date, title, excerpt }) => (
-                    <a href={`/blog/${id}`} className="post-list-item" key={id}>
+                    <Link href={`/blog/${id}`} className="post-list-item" key={id}>
                         <div className="post-meta">
                             <time dateTime={date}>{new Date(date).toLocaleDateString('en-US', {
                                 year: 'numeric',
@@ -24,7 +25,7 @@ export default function BlogIndex() {
                         <h2 className="item-title">{title}</h2>
                         {excerpt && <p className="item-excerpt">{excerpt}</p>}
                         <div className="read-more">Read article &rarr;</div>
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>
